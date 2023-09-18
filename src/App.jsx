@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   const handleAddContact = () => {
-    if (window.confirm('Are you sure you want to add this contact?')) {
+    if (window.confirm(`You are about to add Deannelys' contact Info,\nWould you like to continue?`)) {
       const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
       saveAs(blob, 'ContactInfo.vcf');
     }
