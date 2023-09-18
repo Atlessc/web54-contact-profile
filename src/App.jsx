@@ -27,7 +27,7 @@ function App() {
         <h1>Deannelys Corcino</h1>
         <h2>Fashion Designer</h2>
         <div className='pfp'>
-          <img src='/public/Profile-Image.jpg' alt='profile' />
+          <img src='/Profile-Image.jpg' alt='profile' />
         </div>
       </div>
       <div className='CTA-Button'>
