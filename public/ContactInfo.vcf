@@ -2,8 +2,7 @@ BEGIN:VCARD
 VERSION:3.0
 N:Corcino;Deannelys;
 FN:Deannelys Corcino
-TEL;TYPE=CELL:9293237435
 EMAIL;TYPE=INTERNET:deannelys.corcino@gmail.com
-// instagram
 X-SOCIALPROFILE;type=instagram;x-user=deannelysc:https://www.instagram.com/deannelysc/
+X-SOCIALPROFILE;type=linkedin;x-user=deannelysc:https://www.linkedin.com/in/deannelyscorcino/
 END:VCARD
