@@ -17,13 +17,15 @@
 
 .Name {
   position: fixed;
-  top: 2%;
+  top: 0;
   left: 0;
   width: 100vw;
+  margin: 0;
 }
 
 .Name h1 {
   color: #f4001d;
+  font-size: 3rem;
 }
 
 .Name h2 {
@@ -33,10 +35,10 @@
 
 .pfp {
   position: relative;
-  width: 15rem;
-  height: 15rem;
+  width: 13rem;
+  height: 13rem;
   border-radius: 50%;
-  border: 0.4rem solid #3a3a3a;
+  border: 0.35rem solid #3a3a3a;
   background-color: #242424;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
