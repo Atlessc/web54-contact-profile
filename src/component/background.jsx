@@ -4,7 +4,7 @@ export default function BackgroungImg() {
   return (
     <div className="background">
       {/* img element to an image in the public folder */}
-      <img src="/Background-Image.jpg" alt="background" />
+      <img src="/new-background.png" alt="background" />
     </div>
   )
 }

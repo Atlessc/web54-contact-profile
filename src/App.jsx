@@ -25,9 +25,10 @@ function App() {
     <div className='App-container'>
       <div className='Name'>
         <h1>Deannelys Corcino</h1>
-        <h2>Fashion Designer</h2>
+        <h2>Creator</h2>
         <div className='pfp'>
-          <img src='/Profile-Image.jpg' alt='profile' />
+          <img src='/pfp.png' alt='profile' className='pfpimg'/>
+          <div className='red-tint' />
         </div>
       </div>
       <div className='CTA-Button'>

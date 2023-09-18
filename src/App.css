@@ -17,12 +17,22 @@
 
 .Name {
   position: fixed;
-  top: 5%;
+  top: 2%;
   left: 0;
   width: 100vw;
 }
 
+.Name h1 {
+  color: #f4001d;
+}
+
+.Name h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
 .pfp {
+  position: relative;
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
@@ -43,6 +53,7 @@
   bottom: 5%;
   left: 0;
   width: 100vw;
+
 }
 
 .App-container button {
@@ -50,5 +61,29 @@
   width: calc(100vw - 2rem);
   max-width: 30rem;
   background-color: #242424;
-  border: 0.2rem solid #3a3a3a;
+  color: #f7f7f7;
+  border: 0.3rem solid #f4001d;
+}
+
+.pfpimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 10;
+  filter: brightness(1.3);
+  -webkit-filter: brightness(1.3);
+}
+
+.red-tint {
+  position: absolute;
+  z-index: 11;
+  background-color: rgba(255, 0, 0, 0.5);
+  /* blending */
+  mix-blend-mode: multiply;
+  /* brighten image */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
