@@ -1,29 +1,39 @@
 import { useEffect, useState } from 'react';
 import { saveAs } from 'file-saver';
+import './App.css';
+import BackgroungImg from './component/background.jsx';
 
 function App() {
   const [vCardData, setVCardData] = useState('');
 
   useEffect(() => {
-    // This is a basic vCard format with name and url
-    const data = `BEGIN:VCARD
-VERSION:3.0
-N:Gump;Forrest;;Mr.;
-FN:Forrest Gump
-URL:http://www.example.com
-END:VCARD`;
-
-    setVCardData(data);
+    fetch('/ContactInfo.vcf')
+      .then(response => response.text())
+      .then(data => {
+        setVCardData(data);
+      });
   }, []);
 
   const handleAddContact = () => {
-    const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
-    saveAs(blob, 'contact.vcf');
+    if (window.confirm('Are you sure you want to add this contact?')) {
+      const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
+      saveAs(blob, 'ContactInfo.vcf');
+    }
   };
 
   return (
-    <div>
-      <button onClick={handleAddContact}>Add Contact</button>
+    <div className='App-container'>
+      <div className='Name'>
+        <h1>Deannelys Corcino</h1>
+        <h2>Fashion Designer</h2>
+        <div className='pfp'>
+          <img src='/public/Profile-Image.jpg' alt='profile' />
+        </div>
+      </div>
+      <div className='CTA-Button'>
+        <button onClick={handleAddContact}>Add Contact</button>
+      </div>
+      <BackgroungImg />
     </div>
   );
 }
