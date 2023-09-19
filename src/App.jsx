@@ -28,7 +28,6 @@ function App() {
         <h2>Creator</h2>
         <div className='pfp'>
           <img src='/pfp.png' alt='profile' className='pfpimg'/>
-          {/* <div className='red-tint' /> */}
         </div>
       </div>
       <div className='CTA-Button'>
